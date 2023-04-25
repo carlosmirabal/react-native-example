@@ -13,7 +13,6 @@ export default function App() {
 
     function deleteGoal(index) {
         setCourseGoals((currentGoals) => {
-            console.log(currentGoals.splice(index, 0), index);
             return currentGoals.filter((value, i) => i !== index);
         });
     }
